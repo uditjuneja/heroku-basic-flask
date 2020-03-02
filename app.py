@@ -16,7 +16,7 @@ def homepage():
 
 @app.route('/p/<path:path>')
 def proxy(path):
-    return get(f'{SITE_NAME}{path}').content
+    return get(f'{path}').content
 
 
 if __name__ == '__main__':
